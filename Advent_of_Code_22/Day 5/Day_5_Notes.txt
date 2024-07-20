@@ -1,0 +1,30 @@
+read in the text file.
+
+file is a list of 2 points indicating a starting point and ending point.
+place text into a vector of strings.
+
+create unordered map container
+
+run each string through a function which splits into the 4 components which make up the ending and starting positions
+     function starts by using a delimeter string to split the original into 2.
+     then the 2 halves are run through another function which use a second delimeter to split the strings further 
+          into the 2 components of each point.
+
+     take the X and Y coordinates and label them as starting and end points.
+     override the subtraction operator to determine the direction and movement that is needed to be made.
+          determine is either the X values are the same, or the Y values are the same.
+          For part 2, subtract either way and determine fi the differences are the same value.
+     TEST CASE PRIOR TO MAKING MAP: print out the distance which is required and the direction that is needed to move.
+     
+     ACTUAL: after finding the movement and the direction
+          from the starting point, check to see if it is in the map.
+               if it is not in the map, add it and key 1
+               if it is already present, increment its current value.
+               
+               take necessary difference and direction and print result as a pair.
+               check the difference and increment until the desired number of spaces has been moved
+               for each step, create a new point, repeat steps above for adding/incrementing
+     
+create an unordered map
+
+check to verify that the first point transitions tot he second horizontally or vertically.

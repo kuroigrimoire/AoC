@@ -1,0 +1,20 @@
+Advent of Code
+
+Day 1 - Sensor Sweep
+
+Pseudocode
+
+Read in an array of numbers. The numbers represent the depth in front of the submarine.
+Determine whether the depth increases or decreases and you move through the list of numbers (the submarine moves forward).
+
+declare an array of numbers and provide the numbers given. 
+-    for example 10 numbers are given. array has a length of 10
+input was provided in the form of a text file.
+-    read in text from the text file and store into a string. 
+-    convert the string to an integer value using stoi and then add to vector of measurements.
+declare 2 integer variables and initialize them to 0.
+-    the first stores the number of increases, the second stores for decreases.
+start with the second number (number in position 1), determine the difference between it and the previous, 
+-    if positive increment the increase, if negative, increment Decreases.
+determine which value is larger. 
+print to screen.

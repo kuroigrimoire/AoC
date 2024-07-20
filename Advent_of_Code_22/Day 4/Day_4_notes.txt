@@ -1,0 +1,18 @@
+Day 4 - Sanity Check
+
+Purpose: read in a txt file and use it to play a game of bingo. 
+The first line is th numbers that will be called in the game.
+The following lines represent the bingo boards being used. The lines are in 5 x 5 grids.
+ Start by opening the file. fstream variable was declared with the file name.
+ -   check to see that the file was opened successfully.
+ Once opened, the file ir read into a vector of strings, using the getline function.
+ Contents of the file can then be manipulated easier.
+ The first line is tehn extracted from the vector and placed into a vector of integers.
+ -   a sstram function is used to read in the first line
+ -   the getline function then uses the stream, a string variable and the desried delimeter
+     in order to parse through. 
+-    the contents are stored in the string temporarily before they are then added to a vector of integers
+     using both the push_back function and the stoi function.
+The first two lines of the input vector are removed as we are done with them. 
+This lets us focus on the inputs for the bingo board.
+Declare object of class BingoBoard. 
